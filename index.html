@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090d1d">
+    <meta name="description" content="Meet the Starfall Relic, a rare cosmic collectible from the edge of the galaxy.">
+    <title>Starfall Relic | Vernons orbit</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="showcase">
+        <header class="intro">
+            <p class="eyebrow">THE COLLECTOR'S ORBIT</p>
+            <h1>Small wonders. <span>Infinite stories.</span></h1>
+            <p class="intro-copy">A closer look at an artifact from somewhere beyond the stars.</p>
+        </header>
+
+        <article class="product-card" id="product-card">
+            <div class="card-image-wrap">
+                <img
+                    class="card-image"
+                    src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"
+                    alt="A vivid nebula glowing with purple and blue starlight"
+                >
+                <span class="rarity-badge"><span aria-hidden="true">✦</span> RARE FIND</span>
+                <span class="image-caption">OBJECT 07 / DEEP SPACE</span>
+            </div>
+
+            <div class="card-content">
+                <div class="product-heading">
+                    <div>
+                        <p class="eyebrow">CELESTIAL COLLECTION</p>
+                        <h2 class="product-title">The Starfall Relic</h2>
+                    </div>
+                    <span class="item-number" aria-label="Item number 07">No. 07</span>
+                </div>
+
+                <p class="product-description">
+                    A fragment of a fallen star, carrying a little bit of the cosmos wherever it goes.
+                </p>
+
+                <section class="details-panel" id="product-details" hidden aria-label="Product details">
+                    <div class="detail-row">
+                        <span>Origin</span>
+                        <span>The Lyra Expanse</span>
+                    </div>
+                    <div class="detail-row">
+                        <span>Rarity</span>
+                        <span>One of 250</span>
+                    </div>
+                    <div class="detail-row">
+                        <span>Special trait</span>
+                        <span>Emits a soft starlight glow</span>
+                    </div>
+                </section>
+
+                <div class="card-actions">
+                    <button class="button button-primary" id="details-button" type="button" aria-expanded="false" aria-controls="product-details">
+                        Reveal details <span aria-hidden="true">↗</span>
+                    </button>
+                    <button class="button button-theme" id="theme-button" type="button" aria-pressed="false">
+                        <span class="theme-icon" aria-hidden="true">☼</span> Change theme
+                    </button>
+                </div>
+            </div>
+        </article>
+
+        <footer class="page-note">A LITTLE PIECE OF ELSEWHERE <span aria-hidden="true">✦</span></footer>
+    </main>
+</body>
+</html>
