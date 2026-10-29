@@ -14,10 +14,10 @@ detailsButton.addEventListener("click", () => {
 });
 
 themeButton.addEventListener("click", () => {
-    const isSunriseTheme = productCard.classList.toggle("is-sunrise");
+    const isGoldTheme = productCard.classList.toggle("is-gold");
 
-    themeButton.setAttribute("aria-pressed", String(isSunriseTheme));
-    themeButton.innerHTML = isSunriseTheme
-        ? '<span class="theme-icon" aria-hidden="true">☾</span> Use cosmic theme'
-        : '<span class="theme-icon" aria-hidden="true">☼</span> Change theme';
+    themeButton.setAttribute("aria-pressed", String(isGoldTheme));
+    themeButton.innerHTML = isGoldTheme
+        ? '<span class="theme-icon" aria-hidden="true">☼</span> Use green theme'
+        : '<span class="theme-icon" aria-hidden="true">☼</span> Use gold theme';
 });

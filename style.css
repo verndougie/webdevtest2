@@ -3,21 +3,21 @@
 :root {
     color-scheme: dark;
     font-family: "DM Sans", sans-serif;
-    background: #090d1d;
-    color: #f5f3ff;
+    background: #08110c;
+    color: #f2f7eb;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    --page-glow: rgba(99, 73, 192, 0.2);
-    --card-start: #211a3c;
-    --card-end: #11182d;
-    --accent: #c4a5ff;
-    --accent-strong: #a77bff;
-    --text: #f5f3ff;
-    --muted: #aaa6c1;
-    --line: rgba(231, 220, 255, 0.13);
-    --button-text: #160e2b;
+    --page-glow: rgba(129, 219, 55, 0.17);
+    --card-start: #1b2c19;
+    --card-end: #111b15;
+    --accent: #b7ed62;
+    --accent-strong: #f4d34e;
+    --text: #f2f7eb;
+    --muted: #b2c1ad;
+    --line: rgba(201, 231, 175, 0.16);
+    --button-text: #18240f;
 }
 
 * {
@@ -30,7 +30,7 @@ body {
     margin: 0;
     background:
         radial-gradient(ellipse at 50% 35%, var(--page-glow), transparent 55%),
-        #090d1d;
+        #08110c;
     color: var(--text);
     transition: background-color 0.4s ease;
 }
@@ -68,7 +68,7 @@ button {
     font-size: clamp(2.15rem, 6vw, 3.75rem);
     letter-spacing: -0.065em;
     line-height: 1.08;
-    text-shadow: 0 3px 28px rgba(181, 145, 255, 0.3);
+    text-shadow: 0 3px 28px rgba(154, 222, 83, 0.27);
 }
 
 .intro h1 span {
@@ -85,7 +85,7 @@ button {
 .product-card {
     width: min(100%, 440px);
     overflow: hidden;
-    border: 1px solid rgba(222, 209, 255, 0.17);
+    border: 1px solid rgba(201, 231, 175, 0.18);
     border-radius: 22px;
     background: linear-gradient(155deg, var(--card-start), var(--card-end) 75%);
     box-shadow: 0 18px 55px rgba(0, 0, 0, 0.35), 0 0 40px var(--page-glow);
@@ -101,13 +101,13 @@ button {
     position: relative;
     height: 245px;
     overflow: hidden;
-    background: #201944;
+    background: #1d321b;
 }
 
 .card-image-wrap::after {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(10, 9, 28, 0.03) 35%, rgba(12, 12, 29, 0.68));
+    background: linear-gradient(180deg, rgba(8, 17, 12, 0.03) 35%, rgba(8, 17, 12, 0.68));
     content: "";
     pointer-events: none;
 }
@@ -141,8 +141,8 @@ button {
     padding: 8px 11px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 999px;
-    background: rgba(17, 15, 36, 0.58);
-    color: #f7ecff;
+    background: rgba(13, 25, 14, 0.68);
+    color: #f4f7e9;
     font-size: 0.63rem;
     font-weight: 700;
     letter-spacing: 0.12em;
@@ -150,7 +150,7 @@ button {
 }
 
 .rarity-badge span {
-    color: #e1c4ff;
+    color: var(--accent-strong);
 }
 
 .image-caption {
@@ -179,7 +179,7 @@ button {
     font-family: "Space Grotesk", sans-serif;
     font-size: 1.75rem;
     letter-spacing: -0.055em;
-    text-shadow: 0 2px 18px rgba(196, 165, 255, 0.25);
+    text-shadow: 0 2px 18px rgba(183, 237, 98, 0.2);
 }
 
 .item-number {
@@ -201,7 +201,7 @@ button {
     padding: 4px 14px;
     border: 1px solid var(--line);
     border-radius: 12px;
-    background: rgba(5, 7, 19, 0.2);
+    background: rgba(6, 13, 8, 0.28);
     animation: reveal-details 0.28s ease both;
 }
 
@@ -263,7 +263,7 @@ button {
 }
 
 .button-primary:hover {
-    background: #d7c2ff;
+    background: #d0f58e;
 }
 
 .button-primary span {
@@ -305,15 +305,15 @@ button {
     color: var(--accent);
 }
 
-.product-card.is-sunrise {
-    --card-start: #452c4a;
-    --card-end: #24243b;
-    --accent: #ffcb9c;
-    --accent-strong: #ffad7b;
-    --muted: #d2b9c9;
-    --line: rgba(255, 224, 206, 0.2);
-    --button-text: #321b29;
-    --page-glow: rgba(230, 127, 102, 0.2);
+.product-card.is-gold {
+    --card-start: #302b15;
+    --card-end: #1c1b12;
+    --accent: #f4d34e;
+    --accent-strong: #b7ed62;
+    --muted: #d0c69e;
+    --line: rgba(244, 211, 78, 0.2);
+    --button-text: #29220b;
+    --page-glow: rgba(244, 211, 78, 0.17);
 }
 
 @keyframes reveal-details {
